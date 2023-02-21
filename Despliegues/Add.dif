@@ -1,0 +1,57 @@
+#Unidad organizativa astronautas
+dn: ou=astronautas,dc=tiaeroespacial,dc=es
+objectClass: organizationalUnit
+ou: astronautas
+
+#Unidad grupo_astro
+dn: ou=grupo_astro,dc=tiaeroespacial,dc=es
+objectClass: organizationalUnit
+ou: grupo_astro
+
+#Unidad organizativa instrumentos
+dn: ou=instrumentos,dc=tiaeroespacial,dc=es
+objectClass: organizationalUnit
+ou: instrumentos
+
+#Unidad grupo_instru
+dn: ou=grupo_instru,dc=tiaeroespacial,dc=es
+objectClass: organizationalUnit
+ou: grupo_instru
+
+#Usuario Alvaro en la ud. organizativa astro
+dn: uid=alvaro,ou=grupo_astro,dc=tiaeroespacial,dc=es
+objectClass: inetOrgPerson
+uid:alvaro
+sn: alvaro
+cn:alvaro
+mail: astro@example.com
+userPassword: alvaro
+
+#Usuario Ivan en la ud. organizativa astro
+dn: uid=ivan,ou=grupo_astro,dc=tiaeroespacial,dc=es
+objectClass: inetOrgPerson
+uid:ivan
+sn:ivan
+cn:ivan
+mail: astro2@example.com
+userPassword: ivan
+
+#Instrumento Artemis en la ud. organizativa instrumentos
+dn: uid=artemis,ou=grupo_instru,dc=tiaeroespacial,dc=es
+objectClass: inetOrgPerson
+uid:artemis
+description: orbita la Luna
+sn:artemis
+cn:artemis
+mail: artemis@example.com
+userPassword: artemis
+
+#Instrumento Astrobees en la ud. organizativa instrumentos
+dn: uid=astrobees,ou=grupo_instru,dc=tiaeroespacial,dc=es
+objectClass: inetOrgPerson
+uid:astrobees
+sn:astrobees
+cn:astrobees
+description: tres robots en forma de esfera
+mail: astrobees@example.com
+userPassword: astrobees
